@@ -12,7 +12,7 @@ client.on('messageCreate', message => {
     }
 });
 
-client.login(process.env.DISCORD_BOT_TOKEN);
+client.login(secrets.DISCORD_BOT_TOKEN);
 
 export default function handler(req, res) {
     res.status(200).json({ message: 'Bot is running!' });
